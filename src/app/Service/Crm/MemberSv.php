@@ -206,6 +206,10 @@ class MemberSv extends BaseService {
       
         RedisClient::set('member_auth', $member[$this->_auth], $member);
 
+        $key = md5("member_detail_{$id}");
+
+        RedisClient::set('member_info', $key, '');
+
       }
 
       return true;
@@ -585,6 +589,8 @@ class MemberSv extends BaseService {
         'birth_date' => $detail['birth_date'],
 
         'signature' => $detail['signature'],
+
+        'sales_person' => $detail['sales_person'],
 
         'labels' => $mls
 
