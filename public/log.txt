@@ -1,0 +1,39 @@
+request body = <TemplateSMS>
+                    <to>15201932985</to> 
+                    <appId>8aaf0708674db3ee016769a547d9195a</appId>
+                    <templateId>1</templateId>
+                    <datas><data>123</data><data>321</data></datas>
+                  </TemplateSMS>
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=4DBC7006F3B8AB0C2E5F3F7B49DCC1CF
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>172001</statusCode><statusMsg>网络错误</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>15201932985</to> 
+                    <appId>8aaf0708674db3ee016769a547d9195a</appId>
+                    <templateId>1</templateId>
+                    <datas><data>123</data><data>321</data></datas>
+                  </TemplateSMS>
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=CF3AFF2D4886B33BEE200641A48C90BC
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>172001</statusCode><statusMsg>网络错误</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>15201932985</to> 
+                    <appId>8aaf0708674db3ee016769a547d9195a</appId>
+                    <templateId>1</templateId>
+                    <datas><data>123</data><data>321</data></datas>
+                  </TemplateSMS>
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=915E1ABCCFE8793AAAEA820A8D91D7F9
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>172001</statusCode><statusMsg>网络错误</statusMsg></Response>
+request body = {'to':'15201932985','templateId':'1','appId':'8aaf0708674db3ee016769a547d9195a','datas':['123','321',]}
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=89DBC390DBCE47AC99C4C5D6338DDFDD
+response body = {"statusCode":"172001","statusMsg":"网络错误"}
+request body = {'to':'15201932985','templateId':'1','appId':'8aaf0708674db3ee016769a547d9195a','datas':['123','321',]}
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=70C20FB2ACCCC87189B5E1D6604B8A07
+response body = {"statusCode":"172001","statusMsg":"网络错误"}
+request body = {'to':'15201932985','templateId':'1','appId':'8a216da86812593601681d059b28056c','datas':['123','321',]}
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=F5DE0319D95741AC3EFDF535C73C781B
+response body = {"statusCode":"172001","statusMsg":"网络错误"}
+request body = {'to':'15201932985','templateId':'1','appId':'8a216da86812593601681d059b28056c','datas':['123','321',]}
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=F49708D4AF11237B57374BCDCFCE6A83
+response body = {"statusCode":"172001","statusMsg":"网络错误"}
+request body = {'to':'15201932985','templateId':'1','appId':'8a216da86812593601681d059b28056c','datas':['123','321',]}
+request url = https://https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf0708674db3ee016769a5477e1954/SMS/TemplateSMS?sig=ED2F4444EB71E1CB09C197C7DBDC66C0
+response body = {"statusCode":"172001","statusMsg":"网络错误"}
