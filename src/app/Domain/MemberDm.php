@@ -246,7 +246,7 @@ class MemberDm {
   /**
    * 微信小程序登录
    */
-  public function wechatMiniLogin($appName, $code, $options, $scene) {
+  public function wechatMiniLogin($appName, $code, $options, $scene, $deviceType, $deviceInfo, $ipAddress, $lat, $lng) {
   
     return $this->_memberSv->wechatMiniLogin($appName, $code, $options, $scene, $deviceType, $deviceInfo, $ipAddress, $lat, $lng);
   

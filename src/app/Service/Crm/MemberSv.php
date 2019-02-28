@@ -373,6 +373,12 @@ class MemberSv extends BaseService {
 
         $userInfo['resource_type'] = 2;
 
+      } elseif ($op['sales_code']) {
+
+        $sale = $this->findOne(['sales_code' => $op['sales_code']]);
+
+        $userInfo['resource_id'] = $sale['id'];
+
       } else {
 
         $userInfo['resource_type'] = 1;
@@ -591,6 +597,8 @@ class MemberSv extends BaseService {
         'signature' => $detail['signature'],
 
         'sales_person' => $detail['sales_person'],
+
+        'sales_code' => $detail['sales_code'],
 
         'labels' => $mls
 
