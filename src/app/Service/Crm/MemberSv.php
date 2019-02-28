@@ -102,6 +102,16 @@ class MemberSv extends BaseService {
 
     }
 
+    if (isset($params['resource_id'])) {
+
+      $sql .= " AND a.resource_id = ? ";
+
+      array_push($query, $params['resource_id']);
+
+      $cntQuery['resource_id'] = $params['resource_id'];
+
+    }
+
     if ($params['order']) {
 
       $sql .= " ORDER BY {$params['order']} ";
@@ -109,7 +119,7 @@ class MemberSv extends BaseService {
     }
 
     $offset = ($params['page'] - 1) * $params['page_size'];
-    
+
     $sql .= " LIMIT ?, ? ";
 
     array_push($query, $offset);

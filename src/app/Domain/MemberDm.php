@@ -304,5 +304,14 @@ class MemberDm {
 
   }
 
+  public function getSales($options) {
+
+    $member = $this->_memberSv->findOne($options['member_id']);
+
+    $sale = $this->_memberSv->findOne($member['resource_id']);
+
+    return [ 'sale_name' => $sale['member_name'], 'sale_head' => $sale['portrait'] ];
+
+  }
 
 }

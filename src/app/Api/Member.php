@@ -25,6 +25,7 @@ class Member extends BaseApi {
         'focus_id' => 'focus_id|int|false||关注人id',
         'member_id' => 'member_id|int|false||会员id',
         'member_name' => 'member_name|string|false||会员名称',
+        'resource_id' => 'resource_id|int|false||来源id',
         'sex' => 'sex|string|false||会员性别',
         'order' => 'order|string|false||排序',
         'fields' => 'fields|string|false||查询字段',
@@ -164,6 +165,12 @@ class Member extends BaseApi {
       'countMemberData' => [
       
       
+      ],
+
+      'getSales' => [
+
+        'member_id' => 'member_id|int|true||会员id'
+
       ]
     
     ]);
@@ -338,6 +345,18 @@ class Member extends BaseApi {
   public function indexAnalysisData() {
 
     return $this->dm->indexAnalysisData();
+
+  }
+
+  /**
+   * 查询客户绑定销售
+   * @desc 查询客户绑定销售
+   *
+   * @return array data
+   */
+  public function getSales() {
+
+    return $this->dm->getSales($this->retriveRuleParams(__FUNCTION__));
 
   }
 
